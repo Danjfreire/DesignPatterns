@@ -1,0 +1,44 @@
+O singleton é um padrão criacional que tem o intuito de garantir que uma classe só possua uma única instância.
+Existem diversas formas de se implementar o singleton, essas formas possuem diferenças no quesito de forma de
+inicialização da instância, segurança em um ambiente multi-thread, performance em um ambiente multi-thread,
+e segurança contra Reflection e serialização.
+
+-----------------------------------------------//------------------------------------------------------------
+
+Singleton e Reflection
+
+Para evitar que exista mais de uma instância de um objeto em uma aplicação, o singleton faz a utilização
+de construtores privados, dessa forma a instância da classe só pode ser criada a partir da própria classe,
+para isso se utiliza o método getInstance(). Acontece que no contexto de Reflection é possível modificar
+o controle de acesso do construtor de uma classe singleton, com isso o construtor pode ser acessado de
+fora da classe, quebrando o conceito de singleton.
+
+Ex:
+ ________________________________________________________________________________________
+|                                                                                        |
+|    Constructor[] constructors = singleton.class.getDeclaredConstructors();             |
+|         for (Constructor constructor : constructors) {                                 |
+|                        // O código abaixo faz com que o construtor seja acessível      |
+|                        constructor.setAccessible(true);                                |
+|         }                                                                              |
+|_______________________________________________________________________________________ |
+
+O singleton construido com enum não é vunerável a esse caso, visto que ele não possui construtores
+
+
+-----------------------------------------------//------------------------------------------------------------
+
+Singleton  Serializável
+
+O padrão singleton tem problemas em casos em que a classe singleton precisa ser serializavel(salva em arquivo).
+Nesses casos, quando a instância é recuperada do arquivo, ela é uma instância diferente. Para solucionar esse
+problema a classe singleton deve implementar o método readResolve(). Esse método atribui a instância correta
+do singleton em caso de deserialização.
+
+ ______________________________________________
+|                                              |
+|        private Object readResolve(){         |
+|            return getInstance;               |
+|        }                                     |
+|______________________________________________|
+
