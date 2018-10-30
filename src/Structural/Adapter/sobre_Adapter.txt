@@ -1,0 +1,13 @@
+O adapter é um padrão estrutural que tem o intuito de adaptar o funcionamento de uma classe para necessidades
+que não estão presentes na classe à princípio. Para isso se cria uma interface que representa as funcionalidades
+adaptadas, essa interface é então implementada por uma classe adapter. Essa classe adapter pode ter duas implementações
+diferentes mas que atingem o mesmo resultado:
+
+Class adapter : É uma classe adapter que utiliza herança para acessar as funcionalides da classe a ser adaptada.
+
+Object adapter : É uma classe que acessa as funcionalidades da classe a ser adaptada através de uma instância interna.
+
+-----------------------------------------------//------------------------------------------------------------
+
+Mais informações sobre o adapter em :
+https://www.journaldev.com/1487/adapter-design-pattern-javagit 
