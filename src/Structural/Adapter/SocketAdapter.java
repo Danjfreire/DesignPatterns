@@ -1,7 +1,7 @@
 package Structural.Adapter;
 
 /**
- * Essa é a interface que especifica as funcionalidades do adpter.
+ * Essa é a interface que especifica as funcionalidades do adapter.
  * Neste caso queremos que o nosso Socket também retorne 12v e 3v
  * além dos 120 que retorna por padrão.
  */

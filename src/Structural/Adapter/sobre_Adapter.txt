@@ -10,4 +10,4 @@ Object adapter : É uma classe que acessa as funcionalidades da classe a ser ada
 -----------------------------------------------//------------------------------------------------------------
 
 Mais informações sobre o adapter em :
-https://www.journaldev.com/1487/adapter-design-pattern-javagit 
+https://www.journaldev.com/1487/adapter-design-pattern-javagit
