@@ -1,0 +1,11 @@
+O Template Method é um padrão comportamental que tem o intuito de definir uma ordem específica de
+execução de método (um template).
+
+Esse padrão garante que a ordem de execução sempre seja a mesma e permite modificações no
+comportamento dos métodos a depender da classe que extende do template.
+
+
+-----------------------------------------------//------------------------------------------------------------
+
+Mais informações sobre o Template Method em:
+https://www.journaldev.com/1763/template-method-design-pattern-in-java

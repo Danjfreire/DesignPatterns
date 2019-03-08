@@ -1,0 +1,10 @@
+O padrão Factory ou Factory Method é um padrão de projeto criacional que tem o intuito de fornecer uma forma diferente
+de instanciar classes que utilizam herança. Esse padrão utiliza um código orientado a interfaces e não à implementação,
+ele remove a necessidade de instanciação da classe de implementação que será utilizada, ao invés disso utiliza uma classe
+auxiliar que retorna uma instância baseado em inputs de um método. Esse padrão promove um baixo acoplamento e código mais
+robusto
+
+-----------------------------------------------//------------------------------------------------------------
+
+Mais informações sobre o Template Method em:
+https://www.journaldev.com/1392/factory-design-pattern-in-java
