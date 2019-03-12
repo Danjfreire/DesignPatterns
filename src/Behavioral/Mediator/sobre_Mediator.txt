@@ -1,0 +1,12 @@
+O Mediator é um padrão comportamental que promove um baixo acoplamento através da criação
+de um objeto intermediário, o mediator. O padrão mediator pode ser usado em casos onde
+diferentes instâncias de objetos precisam se comunicar entre si em uma relação "n para n",
+esse tipo de relação entre instâncias geralmente promove um grande acoplamento.
+Ao utilizar o mediator diminuímos o acoplamento do sistema, agora as instâncias que irão
+se comunicar só precisam se ligar ao Mediator e ele irá tratar da distribuição das mensagens.
+
+-----------------------------------------------//------------------------------------------------------------
+
+Mais informações sobre o Mediator em :
+https://sourcemaking.com/design_patterns/mediator
+https://www.journaldev.com/1730/mediator-design-pattern-java#mediator-design-pattern
