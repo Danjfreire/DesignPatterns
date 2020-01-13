@@ -1,3 +1,3 @@
 # javaDesignPatterns
 
-Todos os design patterns em java e com exemplos
+Design patterns em java e com exemplos
